@@ -13,8 +13,8 @@ public class ConnectedThermoDecoder {
 
 		ConnectedThermoResponse connectedThermoResponse = new ConnectedThermoResponse();
 
-		connectedThermoResponse.setHumidity((splitParts.get(0) / 10) - 40);
-		connectedThermoResponse.setTemp(splitParts.get(1));
+		connectedThermoResponse.setTemp((splitParts.get(0) / 10) - 40);
+		connectedThermoResponse.setHumidity(splitParts.get(1));
 		connectedThermoResponse.setSysVolt((float) 0);
 
 		return connectedThermoResponse;
